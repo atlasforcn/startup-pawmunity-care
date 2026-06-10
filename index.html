@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawmunity Care Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">114 實戰模擬平臺 · 第二梯次成功案例 · 長庚大學</p>
+          <h1>Pawmunity 寵物共養照護平台</h1>
+        </div>
+        <a class="source-pill" href="https://ssp.moe.gov.tw/cases/1518" target="_blank" rel="noreferrer">
+          <span>比賽來源</span>
+          <strong>大專校院創新創業實戰模擬學習平臺</strong>
+        </a>
+      </header>
+
+      <section class="metrics" aria-label="平台摘要">
+        <article class="metric">
+          <span>待媒合需求</span>
+          <strong id="metric-requests">12</strong>
+          <small>今晚 3 件高急迫</small>
+        </article>
+        <article class="metric coral">
+          <span>平均 PawScore</span>
+          <strong id="metric-score">91</strong>
+          <small>可信任共養者 48 位</small>
+        </article>
+        <article class="metric">
+          <span>Hub 安心中心</span>
+          <strong id="metric-hubs">6</strong>
+          <small>2 個可立即交接</small>
+        </article>
+        <article class="metric dark">
+          <span>今日回報</span>
+          <strong id="metric-updates">36</strong>
+          <small>照片、餵食、散步與用藥</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel request-panel" aria-label="照護需求">
+          <div class="panel-head">
+            <p>照護需求</p>
+            <button id="new-request" class="ghost-button" type="button">新增</button>
+          </div>
+          <div class="request-list" id="request-list"></div>
+        </aside>
+
+        <section class="panel match-panel" aria-label="共養媒合">
+          <div class="panel-head">
+            <p>共養者媒合</p>
+            <div class="segmented" aria-label="媒合模式">
+              <button class="segment active" data-mode="trust" type="button">信任</button>
+              <button class="segment" data-mode="nearby" type="button">距離</button>
+              <button class="segment" data-mode="urgent" type="button">急件</button>
+            </div>
+          </div>
+
+          <div class="selected-card" id="selected-card"></div>
+
+          <div class="match-grid" id="match-grid"></div>
+        </section>
+
+        <aside class="panel trust-panel" aria-label="信任與風險">
+          <div class="panel-head">
+            <p>PawScore</p>
+            <span class="live-dot">即時更新</span>
+          </div>
+          <div class="score-card" id="score-card"></div>
+          <div class="risk-list" id="risk-list"></div>
+          <div class="source-box">
+            <span>獎項來源</span>
+            <p>教育部大專校院創新創業實戰模擬學習平臺，114 年第二梯次成功案例，Pawmunity寵物共養社群系統。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel hub-panel">
+          <div class="panel-head">
+            <p>Hub 安心中心</p>
+            <button id="dispatch-button" class="ghost-button" type="button">安排交接</button>
+          </div>
+          <div class="hub-map" id="hub-map"></div>
+        </article>
+
+        <article class="panel diary-panel">
+          <div class="panel-head">
+            <p>照護日誌</p>
+            <button id="diary-button" class="ghost-button" type="button">新增回報</button>
+          </div>
+          <div class="diary-feed" id="diary-feed"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
