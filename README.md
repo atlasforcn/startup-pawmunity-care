@@ -1,5 +1,21 @@
 # Pawmunity Care Platform
 
+## 快速看懂
+
+![startup-pawmunity-care 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-pawmunity-care/
+- 這個原型在做什麼：把 Pawmunity 做成寵物共養照護媒合平台。
+- 特色定位：特色是把共養者、照護任務、寵物狀態與社群互助放進同一個照護工作台。
+- 操作流程：建立寵物照護需求與可支援時段 → 媒合共養者並分配任務 → 追蹤餵食、散步、醫療提醒與照護回報
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-pawmunity-care 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 這個 repo 是依據 `Pawmunity寵物共養社群系統` 在教育部大專校院創新創業實戰模擬學習平臺中的成功案例概念做出的前端原型。原型把「都市寵物臨時照護、可信任共養者、Hub 安心中心、PawScore 信任評分」實作成一個寵物共養照護媒合平台。
 
 ## 比賽來源
