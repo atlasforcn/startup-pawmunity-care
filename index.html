@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- repo-snapshot:start -->
+    <section class="repo-snapshot repo-snapshot--care" aria-label="專案辨識預覽：Pawmunity" style="--snap-bg: #f1f6f2; --snap-bg-2: #dcebe0; --snap-ink: #1f2d25; --snap-muted: #637268; --snap-accent: #2f9c6b; --snap-accent-2: #ee8a62;">
+      <div class="snapshot-copy">
+        <p class="snapshot-kicker">Pet co-care network</p>
+        <div class="snapshot-name">Pawmunity</div>
+        <p class="snapshot-tagline">寵物共養、照護任務與鄰里協作，截圖就要看見毛孩照護排程，而非專案附註。</p>
+        <div class="snapshot-chips" aria-label="核心辨識元素">
+        <span>共養任務</span>
+        <span>照護紀錄</span>
+        <span>鄰里支援</span>
+        </div>
+      </div>
+      <div class="snapshot-scene" aria-hidden="true">
+        <div class="snapshot-device">
+          <div class="snapshot-device-head">
+            <span>Care circle</span>
+            <strong>柴犬晚餐與散步</strong>
+          </div>
+          <div class="snapshot-visual snapshot-visual--care">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="snapshot-data-row">
+          <span><b>4</b>任務</span>
+          <span><b>2</b>照護人</span>
+          <span><b>98</b>狀態</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- repo-snapshot:end -->
+    <div class="demo-boundary" role="note">
+      <strong>Prototype</strong>
+      <span>靜態互動原型；畫面資料、評分、AI、金流、醫療、法律與安全流程皆為示範，不代表原團隊官方產品或實際服務。</span>
+    </div>
     <main class="app-shell">
       <header class="topbar">
         <div>
@@ -73,10 +107,10 @@
           </div>
           <div class="score-card" id="score-card"></div>
           <div class="risk-list" id="risk-list"></div>
-          <div class="source-box">
-            <span>獎項來源</span>
+          <details class="source-box">
+            <summary>獎項來源</summary>
             <p>教育部大專校院創新創業實戰模擬學習平臺，114 年第二梯次成功案例，Pawmunity寵物共養社群系統。</p>
-          </div>
+          </details>
         </aside>
       </section>
 
